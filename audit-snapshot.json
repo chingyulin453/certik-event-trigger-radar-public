@@ -1,0 +1,2974 @@
+{
+  "generated_at": "2026-07-29T14:54:55.043619Z",
+  "health": {
+    "reasons": [
+      "X collection is not fresh and window-complete for all P0 targets.",
+      "GitHub and RSS runtime collection has no successful current snapshot.",
+      "Official page references are not polled by the runtime.",
+      "Universal all-asset chain netflow is unavailable.",
+      "RWA.xyz is an unofficial local website snapshot and mixed-series growth is suppressed."
+    ],
+    "safe_to_interpret_missing_as_no_event": false,
+    "status": "partial"
+  },
+  "metric_triggers": [
+    {
+      "assertion": "BNB recorded $8,532,683 of one-day bridge net inflow.",
+      "confidence": "medium",
+      "event_time": "2026-07-29T00:00:00Z",
+      "metric": {
+        "change_pct": null,
+        "change_value": "8532682.751929767",
+        "current_value": null,
+        "label": "1-day bridge net inflow",
+        "source": "defillama",
+        "unit": "usd",
+        "window_days": 1
+      },
+      "observed_at": "2026-07-29T13:29:02Z",
+      "paired_event": {
+        "assertion": "BSC Chapel 測試網已啟用 Pasteur 硬分叉；這不是 BSC 主網升級。",
+        "event_time": "2026-07-23T04:00:11Z",
+        "event_type": "testnet_upgrade"
+      },
+      "project_id": "bnb-chain",
+      "project_name": "BNB",
+      "recommended_action": "Validate whether the bridge movement reflects project-related capital growth; bridge flow alone is not universal all-asset netflow.",
+      "sales_stage": "qualify_first",
+      "score": 78,
+      "sources": [
+        {
+          "label": "DefiLlama Pro snapshot",
+          "url": "https://defillama.com/"
+        }
+      ],
+      "trigger_id": "metric:f455981bd7303bfbcb3be027",
+      "trigger_source": "metrics",
+      "trigger_type": "bridge_net_inflow",
+      "verification_status": "data_plus_recent_event",
+      "why_now": "The positive bridge flow crossed the $5 million qualification threshold."
+    },
+    {
+      "assertion": "Stellar RWA 價值成長 grew 18.9% over 30 days.",
+      "confidence": "low",
+      "event_time": "2026-07-28T00:00:00Z",
+      "metric": {
+        "change_pct": "0.1891873736359134709670209563",
+        "change_value": "365162581.4931137",
+        "current_value": "2295326177.906584",
+        "label": "RWA 價值成長",
+        "source": "rwa_xyz_unofficial_snapshot",
+        "unit": "usd",
+        "window_days": 30
+      },
+      "observed_at": "2026-07-29T13:29:02Z",
+      "paired_event": null,
+      "project_id": "stellar",
+      "project_name": "Stellar",
+      "recommended_action": "Confirm the unofficial website-derived metric with a second source before treating it as a sales event.",
+      "sales_stage": "qualify_first",
+      "score": 70,
+      "sources": [
+        {
+          "label": "RWA.xyz local website snapshot",
+          "url": "https://app.rwa.xyz/"
+        }
+      ],
+      "trigger_id": "metric:c20744d3c3d2636556e499e2",
+      "trigger_source": "metrics",
+      "trigger_type": "rwa_value_growth",
+      "verification_status": "data_only",
+      "why_now": "The fresh, scope-consistent RWA series crossed its qualification threshold."
+    },
+    {
+      "assertion": "TRON stablecoin supply grew $687,607,688 (0.8%) over 30 days.",
+      "confidence": "medium",
+      "event_time": "2026-07-29T00:00:00Z",
+      "metric": {
+        "change_pct": "0.0076695154123606795",
+        "change_value": "687607688.19",
+        "current_value": "90342253545.19",
+        "label": "30-day stablecoin supply change",
+        "source": "defillama",
+        "unit": "usd",
+        "window_days": 30
+      },
+      "observed_at": "2026-07-29T13:29:02Z",
+      "paired_event": null,
+      "project_id": "tron",
+      "project_name": "TRON",
+      "recommended_action": "Confirm whether the change represents durable ecosystem capital rather than temporary bridging or issuer rebalancing.",
+      "sales_stage": "qualify_first",
+      "score": 70,
+      "sources": [
+        {
+          "label": "DefiLlama Pro snapshot",
+          "url": "https://defillama.com/"
+        }
+      ],
+      "trigger_id": "metric:6a7ddd33527d86382c6e3dc7",
+      "trigger_source": "metrics",
+      "trigger_type": "stablecoin_supply_growth",
+      "verification_status": "data_only",
+      "why_now": "The supply increase crossed the absolute and percentage qualification thresholds."
+    },
+    {
+      "assertion": "Tempo stablecoin supply grew $11,390,131 (36.1%) over 30 days.",
+      "confidence": "medium",
+      "event_time": "2026-07-29T00:00:00Z",
+      "metric": {
+        "change_pct": "0.3607823207038589",
+        "change_value": "11390130.93",
+        "current_value": "42960776.93",
+        "label": "30-day stablecoin supply change",
+        "source": "defillama",
+        "unit": "usd",
+        "window_days": 30
+      },
+      "observed_at": "2026-07-29T13:29:02Z",
+      "paired_event": null,
+      "project_id": "tempo",
+      "project_name": "Tempo",
+      "recommended_action": "Confirm whether the change represents durable ecosystem capital rather than temporary bridging or issuer rebalancing.",
+      "sales_stage": "qualify_first",
+      "score": 70,
+      "sources": [
+        {
+          "label": "DefiLlama Pro snapshot",
+          "url": "https://defillama.com/"
+        }
+      ],
+      "trigger_id": "metric:b073e0f28f955941872da99a",
+      "trigger_source": "metrics",
+      "trigger_type": "stablecoin_supply_growth",
+      "verification_status": "data_only",
+      "why_now": "The supply increase crossed the absolute and percentage qualification thresholds."
+    },
+    {
+      "assertion": "Stellar stablecoin supply grew $132,397,035 (16.3%) over 30 days.",
+      "confidence": "medium",
+      "event_time": "2026-07-29T00:00:00Z",
+      "metric": {
+        "change_pct": "0.16254265289624886",
+        "change_value": "132397034.77",
+        "current_value": "946934218.77",
+        "label": "30-day stablecoin supply change",
+        "source": "defillama",
+        "unit": "usd",
+        "window_days": 30
+      },
+      "observed_at": "2026-07-29T13:29:02Z",
+      "paired_event": null,
+      "project_id": "stellar",
+      "project_name": "Stellar",
+      "recommended_action": "Confirm whether the change represents durable ecosystem capital rather than temporary bridging or issuer rebalancing.",
+      "sales_stage": "qualify_first",
+      "score": 70,
+      "sources": [
+        {
+          "label": "DefiLlama Pro snapshot",
+          "url": "https://defillama.com/"
+        }
+      ],
+      "trigger_id": "metric:c16802820d68b6bca405392a",
+      "trigger_source": "metrics",
+      "trigger_type": "stablecoin_supply_growth",
+      "verification_status": "data_only",
+      "why_now": "The supply increase crossed the absolute and percentage qualification thresholds."
+    },
+    {
+      "assertion": "kaia stablecoin supply grew $70,964,439 (40.1%) over 30 days.",
+      "confidence": "medium",
+      "event_time": "2026-07-29T00:00:00Z",
+      "metric": {
+        "change_pct": "0.4009220196916782",
+        "change_value": "70964438.74",
+        "current_value": "247967534.74",
+        "label": "30-day stablecoin supply change",
+        "source": "defillama",
+        "unit": "usd",
+        "window_days": 30
+      },
+      "observed_at": "2026-07-29T13:29:02Z",
+      "paired_event": null,
+      "project_id": "kaia",
+      "project_name": "kaia",
+      "recommended_action": "Confirm whether the change represents durable ecosystem capital rather than temporary bridging or issuer rebalancing.",
+      "sales_stage": "qualify_first",
+      "score": 70,
+      "sources": [
+        {
+          "label": "DefiLlama Pro snapshot",
+          "url": "https://defillama.com/"
+        }
+      ],
+      "trigger_id": "metric:e7598cd384e1708904629269",
+      "trigger_source": "metrics",
+      "trigger_type": "stablecoin_supply_growth",
+      "verification_status": "data_only",
+      "why_now": "The supply increase crossed the absolute and percentage qualification thresholds."
+    }
+  ],
+  "projects": [
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "0G",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 4
+      },
+      "project_id": "0g",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Algorand",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 1
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "algorand",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": true,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 4,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 2,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "AlphaSec (on Kaia)",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 9
+      },
+      "project_id": "alphasec",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "company",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Animoca Brands",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 0
+      },
+      "project_id": "animoca-brands",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": true,
+        "cex_netflow": true,
+        "cex_row": true,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "cex",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "cex_news_assets_first",
+      "name": "Binance Exchange",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "news_only",
+        "registry_addresses": 0
+      },
+      "project_id": "binance",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": true,
+        "cex_netflow": true,
+        "cex_row": true,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "cex",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "cex_news_assets_first",
+      "name": "BitMart",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "news_only",
+        "registry_addresses": 4
+      },
+      "project_id": "bitmart",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 4,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": true,
+        "cex_netflow": true,
+        "cex_row": true,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "cex",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "cex_news_assets_first",
+      "name": "Blofin",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "news_only",
+        "registry_addresses": 0
+      },
+      "project_id": "blofin",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "BNB",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 10
+      },
+      "project_id": "bnb-chain",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": true,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Cardano (ADA)",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 1
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "cardano",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l2",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Celo",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 1
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 67
+      },
+      "project_id": "celo",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": true,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 3,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Cetus",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 14
+      },
+      "project_id": "cetus",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 4,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "infrastructure",
+      "monitoring_mode": "full_onchain",
+      "monitoring_profile": "legacy_unset",
+      "name": "ChainGPT LLC",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 8,
+        "policy": "legacy_unset",
+        "registry_addresses": 40
+      },
+      "project_id": "chaingpt",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "unknown",
+      "monitoring_mode": "research_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "cipherbc/sealer2100/Deriw/Coinw/Gemw",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 0
+      },
+      "project_id": "cipherbc-sealer2100-deriw-coinw-gemw",
+      "research_status": "unresolved",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 9,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Concordium",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "concordium",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Coreum",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "coreum",
+      "research_status": "partial",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Cosmos",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 4,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "cosmos",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Cronos",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 1
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 1
+      },
+      "project_id": "cronos",
+      "research_status": "partial",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "CROSS",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "cross-gamechain",
+      "research_status": "partial",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 6,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": true,
+        "cex_netflow": true,
+        "cex_row": true,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "cex",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "cex_news_assets_first",
+      "name": "Crypto.com",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "news_only",
+        "registry_addresses": 10
+      },
+      "project_id": "crypto-com",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 5,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "research_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "d.energy",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "d-energy",
+      "research_status": "partial",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 6,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "wallet",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Dcent Wallet",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 0
+      },
+      "project_id": "dcent-wallet",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 6,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Digital Asset (Canton)",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "digital-asset-canton",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": false,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Filecoin",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 5
+      },
+      "project_id": "filecoin",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l2",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Fraxtal",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 26
+      },
+      "project_id": "fraxtal",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "game",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Gala",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 3
+      },
+      "project_id": "gala",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "infrastructure",
+      "monitoring_mode": "full_onchain",
+      "monitoring_profile": "legacy_unset",
+      "name": "Gonka",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 1,
+        "policy": "legacy_unset",
+        "registry_addresses": 1
+      },
+      "project_id": "gonka",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 3,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Haedal Protocol",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 1
+      },
+      "project_id": "haedal-protocol",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Hedera",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 2
+      },
+      "project_id": "hedera",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": true,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Imua",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 9
+      },
+      "project_id": "imua",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "kaia",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 37
+      },
+      "project_id": "kaia",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "wallet",
+      "monitoring_mode": "full_onchain",
+      "monitoring_profile": "legacy_unset",
+      "name": "Klever",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 1,
+        "policy": "legacy_unset",
+        "registry_addresses": 3
+      },
+      "project_id": "klever",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Massa Labs",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 4
+      },
+      "project_id": "massa",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Mavryk Network",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 12
+      },
+      "project_id": "mavryk-network",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 0,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "MemeCore",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 1,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 2
+      },
+      "project_id": "memecore",
+      "research_status": "partial",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "MultiversX",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 6
+      },
+      "project_id": "multiversx",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": true,
+        "cex_netflow": true,
+        "cex_row": true,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "cex",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "cex_news_assets_first",
+      "name": "OKX",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "news_only",
+        "registry_addresses": 0
+      },
+      "project_id": "okx",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Onyx",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 11
+      },
+      "project_id": "onyx",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Peaq",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 16
+      },
+      "project_id": "peaq",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "qubetics.com",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 1
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 8
+      },
+      "project_id": "qubetics",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "company",
+      "monitoring_mode": "research_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "rigsec.com",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 0
+      },
+      "project_id": "rigsec",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "company",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Ripple",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 3
+      },
+      "project_id": "ripple",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Seedify Inc",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 8
+      },
+      "project_id": "seedify",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Sologenic",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 1
+      },
+      "project_id": "sologenic",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 2,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Stellar",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 1
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "stellar",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": true,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "Temple (on canton)",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 2,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 0
+      },
+      "project_id": "temple-canton",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 3,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 2,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Tempo",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 2,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 8
+      },
+      "project_id": "tempo",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "TON",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 2
+      },
+      "project_id": "ton",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": true,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 1,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "TRON",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "tron",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": true,
+        "signal_eligible": true,
+        "source_classification": "unofficial_fragile_website_snapshot",
+        "status": "fresh"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 0,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "infrastructure",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "units.network",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 0,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 7
+      },
+      "project_id": "units-network",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 3,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "protocol",
+      "monitoring_mode": "full_onchain",
+      "monitoring_profile": "legacy_unset",
+      "name": "Venus Labs",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 3,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 91,
+        "policy": "legacy_unset",
+        "registry_addresses": 360
+      },
+      "project_id": "venus-protocol",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": true,
+        "configured_protocol_slugs": 3,
+        "stablecoin": true,
+        "true_all_asset_netflow": false,
+        "tvl": true
+      },
+      "entity_type": "l1",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "chain_metrics_first",
+      "name": "Wemix.com",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 0,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "archive_only",
+        "registry_addresses": 0
+      },
+      "project_id": "wemix",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 2,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    },
+    {
+      "defillama": {
+        "bridge": false,
+        "cex_assets": false,
+        "cex_netflow": false,
+        "cex_row": false,
+        "chain_row": false,
+        "configured_protocol_slugs": 1,
+        "stablecoin": false,
+        "true_all_asset_netflow": false,
+        "tvl": false
+      },
+      "entity_type": "company",
+      "monitoring_mode": "external_only",
+      "monitoring_profile": "legacy_unset",
+      "name": "XDC Foundation",
+      "official_sources": {
+        "feed_runtime": "not_collected",
+        "github_repositories": 2,
+        "github_runtime": "not_collected",
+        "official_page_references": 1,
+        "official_pages_are_polled": false,
+        "rss_feeds": 0
+      },
+      "onchain": {
+        "enabled_addresses": 0,
+        "policy": "legacy_unset",
+        "registry_addresses": 0
+      },
+      "project_id": "xdc-foundation",
+      "research_status": "verified",
+      "rwa": {
+        "mapped": false,
+        "signal_eligible": false,
+        "source_classification": null,
+        "status": "not_mapped"
+      },
+      "unresolved_field_count": 1,
+      "x": {
+        "configured": true,
+        "error_code": null,
+        "freshness": "unknown",
+        "history": "unknown",
+        "latest_post_at": null,
+        "posts_fetched": 0,
+        "status": "not_collected"
+      }
+    }
+  ],
+  "schema": "event-trigger-radar/audit-snapshot/v1",
+  "source_snapshots": {
+    "metrics_generated_at": "2026-07-29T13:29:02Z",
+    "rpc_generated_at": "2026-07-29T13:32:13.196526Z",
+    "verified_events_generated_at": "2026-07-24T01:39:08+08:00",
+    "x_generated_at": "2026-07-29T14:54:54.727591Z"
+  },
+  "summary": {
+    "cex_assets": 5,
+    "cex_netflow": 5,
+    "cex_targets": 5,
+    "chain_bridge": 12,
+    "chain_stablecoin": 18,
+    "chain_targets": 29,
+    "chain_true_all_asset_netflow": 0,
+    "chain_tvl": 20,
+    "feed_runtime_collected": 0,
+    "github_configured": 42,
+    "github_runtime_collected": 0,
+    "metric_triggers": 6,
+    "metric_triggers_with_recent_event": 1,
+    "official_page_reference": 14,
+    "onchain_enabled_addresses": 101,
+    "onchain_enabled_projects": 4,
+    "p0_targets": 52,
+    "rpc_configured_chains": 0,
+    "rpc_configured_endpoints": 0,
+    "rpc_failed_chains": 0,
+    "rpc_healthy_chains": 0,
+    "rpc_healthy_endpoints": 0,
+    "rpc_redundant_chains": 0,
+    "rpc_total_chains": 26,
+    "rss_configured": 6,
+    "rwa_fresh": 7,
+    "rwa_mapped": 7,
+    "rwa_signal_eligible": 6,
+    "x_collected": 0,
+    "x_configured": 52,
+    "x_failed": 0,
+    "x_fresh_window_complete": 0,
+    "x_window_complete": 0
+  },
+  "verified_events": [
+    {
+      "assertion": "BSC Chapel Testnet's Pasteur hardfork was enabled; this is not a BSC mainnet activation.",
+      "checks": {
+        "exact_time_verified": true,
+        "first_party_resolvable": true,
+        "scope_is_current": true,
+        "second_primary_source": true
+      },
+      "correction": "The earlier radar attributed the post to the BNB main account and used the retweet wrapper time. The origin is BNBChainDevs at 04:00:11Z; BNBCHAIN amplified it later.",
+      "event_time": "2026-07-23T04:00:11Z",
+      "event_type": "testnet_upgrade",
+      "project_id": "bnb-chain",
+      "project_name": "BNB",
+      "recommended_action": "Confirm the Pasteur mainnet timeline and whether the v1.7.6 system-contract and validator changes will enter the next audit or monitoring scope.",
+      "sales_stage": "contact_now",
+      "sources": [
+        {
+          "label": "BNB Chain Developers X",
+          "url": "https://x.com/BNBChainDevs/status/2080140896914317448"
+        },
+        {
+          "label": "BSC v1.7.6 release",
+          "url": "https://github.com/bnb-chain/bsc/releases/tag/v1.7.6"
+        },
+        {
+          "label": "BEP-673",
+          "url": "https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-673.md"
+        }
+      ],
+      "verification_status": "verified_multi_source",
+      "why_now": "The testnet activation and mandatory v1.7.6 node update create a bounded mainnet-readiness and upgrade-review window.",
+      "zh": {
+        "assertion": "BSC Chapel 測試網已啟用 Pasteur 硬分叉；這不是 BSC 主網升級。",
+        "correction": "舊版把貼文歸因給 BNB 主帳號，並使用轉推包裝層的時間。原始作者是 BNBChainDevs，時間為 04:00:11Z；BNBCHAIN 稍後才轉推放大。",
+        "recommended_action": "確認 Pasteur 主網時程，以及 v1.7.6 的系統合約與驗證者變更是否會納入下一輪審計或持續監控範圍。",
+        "why_now": "測試網啟用加上節點必須升級至 v1.7.6，形成一個有明確時間邊界的主網準備與升級審查窗口。"
+      }
+    },
+    {
+      "assertion": "Celo added native mainnet support for Machine Payments Protocol through the same facilitator used for x402.",
+      "checks": {
+        "exact_time_verified": true,
+        "first_party_resolvable": true,
+        "scope_is_current": true,
+        "second_primary_source": true
+      },
+      "correction": null,
+      "event_time": "2026-07-22T15:00:25Z",
+      "event_type": "mainnet_integration_live",
+      "project_id": "celo",
+      "project_name": "Celo",
+      "recommended_action": "Ask who owns the facilitator and authorization review scope, then offer a targeted review of the settlement, replay-protection and operational controls.",
+      "sales_stage": "contact_now",
+      "sources": [
+        {
+          "label": "Celo official X",
+          "url": "https://x.com/Celo/status/2079944831561003271"
+        },
+        {
+          "label": "Celo Core official blog",
+          "url": "https://blog.celo.org/celo-adds-native-support-for-machine-payments-protocol-mpp-following-native-x402-integration-42409a5ac0ec"
+        },
+        {
+          "label": "Celo MPP documentation",
+          "url": "https://docs.celo.org/build-on-celo/build-with-ai/mpp"
+        }
+      ],
+      "verification_status": "verified_multi_source",
+      "why_now": "A new payment authorization and facilitator path is live on mainnet and handles USDC settlement through EIP-3009.",
+      "zh": {
+        "assertion": "Celo 已在主網原生支援 Machine Payments Protocol，並沿用 x402 的 facilitator 完成 USDC 結算。",
+        "correction": null,
+        "recommended_action": "先確認 facilitator 的負責團隊與授權審查邊界，再提出針對結算流程、防重放與營運控制的專項審查。",
+        "why_now": "新的支付授權與 facilitator 路徑已在主網上線，並透過 EIP-3009 處理 USDC 結算。"
+      }
+    },
+    {
+      "assertion": "Cardano mainnet enacted the van Rossem hardfork and entered Protocol Version 11.",
+      "checks": {
+        "exact_time_verified": true,
+        "first_party_resolvable": true,
+        "scope_is_current": true,
+        "second_primary_source": true
+      },
+      "correction": "The X announcement was posted on July 20, but the verified activation time was July 18 at 21:44:51Z.",
+      "event_time": "2026-07-18T21:44:51Z",
+      "event_type": "mainnet_hardfork",
+      "project_id": "cardano",
+      "project_name": "Cardano (ADA)",
+      "recommended_action": "Use the completed hardfork as a follow-up point: confirm post-upgrade monitoring findings and the security-readiness plan for the Dijkstra-era changes.",
+      "sales_stage": "contact_now",
+      "sources": [
+        {
+          "label": "Cardano official X",
+          "url": "https://x.com/Cardano/status/2079199180971487639"
+        },
+        {
+          "label": "Cardano upgrade page",
+          "url": "https://cardano.org/news/2026-06-16-van-rossem-hard-fork/"
+        },
+        {
+          "label": "Cardano activation digest",
+          "url": "https://forum.cardano.org/t/digest-july-22-2026-van-rossem-hard-fork-activates-constitutional-committee-election-cardano-foundation-updates-cardano-improvement-proposals-cip-updates-spotlight-on-learn-cardano-linda/155842"
+        }
+      ],
+      "verification_status": "verified_multi_source",
+      "why_now": "This is a completed mainnet protocol change affecting Plutus costs and the technical foundation for later scaling upgrades.",
+      "zh": {
+        "assertion": "Cardano 主網已完成 van Rossem 硬分叉，協議版本進入 Version 11。",
+        "correction": "X 公告發布於 7 月 20 日，但經驗證的實際啟用時間是 7 月 18 日 21:44:51Z。",
+        "recommended_action": "以已完成的硬分叉作為跟進切入點，確認升級後監控結果，以及 Dijkstra 階段變更的安全準備計畫。",
+        "why_now": "這是已完成的主網協議變更，影響 Plutus 成本模型，也為後續擴容升級建立技術基礎。"
+      }
+    },
+    {
+      "assertion": "Peaq asked node operators to upgrade to peaq-v0.0.112 ahead of a runtime upgrade.",
+      "checks": {
+        "exact_time_verified": true,
+        "first_party_resolvable": true,
+        "scope_is_current": true,
+        "second_primary_source": true
+      },
+      "correction": null,
+      "event_time": "2026-07-20T13:16:32Z",
+      "event_type": "node_and_runtime_upgrade",
+      "project_id": "peaq",
+      "project_name": "Peaq",
+      "recommended_action": "Confirm the runtime activation date and changed pallets or EVM-tracing surface, then scope a pre-activation review if those changes are material.",
+      "sales_stage": "contact_now",
+      "sources": [
+        {
+          "label": "Peaq official X",
+          "url": "https://x.com/peaq/status/2079193741957664990"
+        },
+        {
+          "label": "peaq-v0.0.112 Git tag",
+          "url": "https://github.com/peaqnetwork/peaq-network-node/tree/peaq-v0.0.112"
+        }
+      ],
+      "verification_status": "verified_multi_source",
+      "why_now": "The operator upgrade is requested before runtime activation, which is a concrete pre-deployment review window.",
+      "zh": {
+        "assertion": "Peaq 要求節點營運者在 runtime 升級前更新至 peaq-v0.0.112。",
+        "correction": null,
+        "recommended_action": "確認 runtime 啟用日期、異動的 pallets 或 EVM tracing 範圍；若變更具實質影響，再界定上線前審查範圍。",
+        "why_now": "節點更新發生在 runtime 啟用之前，因此存在具體的上線前審查窗口。"
+      }
+    },
+    {
+      "assertion": "Cosmos Labs and Peersyst signed an MOU with LNET to collaborate on CBWeb3 and explore CBDC and tokenized-asset interoperability in Latin America.",
+      "checks": {
+        "exact_time_verified": true,
+        "first_party_resolvable": true,
+        "scope_is_current": true,
+        "second_primary_source": true
+      },
+      "correction": "The earlier X evidence URL became unavailable. Cosmos reposted the announcement under a new post ID at 16:41:13Z.",
+      "event_time": "2026-07-23T16:41:13Z",
+      "event_type": "signed_mou_exploration",
+      "project_id": "cosmos",
+      "project_name": "Cosmos",
+      "recommended_action": "Use the existing connection to identify Cosmos's implementation responsibility, architecture and milestones before proposing any security work.",
+      "sales_stage": "qualify_first",
+      "sources": [
+        {
+          "label": "Cosmos official X repost",
+          "url": "https://x.com/cosmos/status/2080332415416053859"
+        },
+        {
+          "label": "Cosmos Labs release",
+          "url": "https://www.prnewswire.com/news-releases/cosmos-labs-and-peersyst-partner-with-lnet-to-pioneer-tokenized-finance-in-latin-america-302832609.html"
+        }
+      ],
+      "verification_status": "verified_multi_source",
+      "why_now": "The collaboration is real, but the implementation scope, architecture and delivery milestones are not yet public.",
+      "zh": {
+        "assertion": "Cosmos Labs 與 Peersyst 已和 LNET 簽署 MOU，將合作推進 CBWeb3，並探索拉丁美洲 CBDC 與代幣化資產互操作。",
+        "correction": "舊版使用的 X 證據連結已失效；Cosmos 後來以新的貼文 ID 於 16:41:13Z 重新發布公告。",
+        "recommended_action": "先透過既有關係確認 Cosmos 的實作責任、架構與里程碑，再判斷是否存在具體安全工作。",
+        "why_now": "合作關係已確認，但實作範圍、架構與交付里程碑仍未公開。"
+      }
+    },
+    {
+      "assertion": "Concordium published an adoption update for the Agent Registry and Verified by Concordium badge; the registry originally launched on May 28.",
+      "checks": {
+        "exact_time_verified": true,
+        "first_party_resolvable": true,
+        "scope_is_current": false,
+        "second_primary_source": true
+      },
+      "correction": "The earlier radar treated the July 20 thread as a new product launch. It was an update describing an eight-week-old launch and existing integrations.",
+      "event_time": "2026-07-16T13:46:20Z",
+      "event_type": "adoption_update",
+      "project_id": "concordium",
+      "project_name": "Concordium",
+      "recommended_action": "Do not trigger automated outreach. Keep it as relationship context and wait for a new contract, protocol lock, payment flow or dated rollout.",
+      "sales_stage": "watch_only",
+      "sources": [
+        {
+          "label": "Concordium X thread",
+          "url": "https://x.com/Concordium/status/2079183705843843560"
+        },
+        {
+          "label": "Concordium official update",
+          "url": "https://www.concordium.com/article/agent-registry-update-july-2026"
+        },
+        {
+          "label": "Concordium badge documentation",
+          "url": "https://docs.concordium.com/en/mainnet/technical-reference/agent-registry/concordium-badge.html"
+        }
+      ],
+      "verification_status": "verified_not_new_launch",
+      "why_now": "The update shows usage and ecosystem expansion, but the badge introduces no new contract or token type and no current deployment deadline was identified.",
+      "zh": {
+        "assertion": "Concordium 發布 Agent Registry 與 Verified by Concordium badge 的採用進度；Registry 實際上早於 5 月 28 日上線。",
+        "correction": "舊版把 7 月 20 日的 thread 當成新產品發布；實際上它是在描述八週前的上線與既有整合。",
+        "recommended_action": "不要觸發自動外聯；只作為客戶關係背景，等待新合約、協議鎖定、支付流程或有日期的 rollout。",
+        "why_now": "這次更新顯示採用與生態擴張，但 badge 沒有新增合約或代幣類型，也沒有找到新的部署期限。"
+      }
+    }
+  ]
+}
